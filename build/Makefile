@@ -123,140 +123,59 @@ my_sunnet/fast:
 	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/build
 .PHONY : my_sunnet/fast
 
-src/com.blackCat.core/MyConn.o: src/com.blackCat.core/MyConn.cpp.o
+src/com.blackCat.core/ConnWriter.o: src/com.blackCat.core/ConnWriter.cpp.o
 
-.PHONY : src/com.blackCat.core/MyConn.o
-
-# target to build an object file
-src/com.blackCat.core/MyConn.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o
-.PHONY : src/com.blackCat.core/MyConn.cpp.o
-
-src/com.blackCat.core/MyConn.i: src/com.blackCat.core/MyConn.cpp.i
-
-.PHONY : src/com.blackCat.core/MyConn.i
-
-# target to preprocess a source file
-src/com.blackCat.core/MyConn.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.i
-.PHONY : src/com.blackCat.core/MyConn.cpp.i
-
-src/com.blackCat.core/MyConn.s: src/com.blackCat.core/MyConn.cpp.s
-
-.PHONY : src/com.blackCat.core/MyConn.s
-
-# target to generate assembly for a file
-src/com.blackCat.core/MyConn.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.s
-.PHONY : src/com.blackCat.core/MyConn.cpp.s
-
-src/com.blackCat.core/MyConnWriter.o: src/com.blackCat.core/MyConnWriter.cpp.o
-
-.PHONY : src/com.blackCat.core/MyConnWriter.o
+.PHONY : src/com.blackCat.core/ConnWriter.o
 
 # target to build an object file
-src/com.blackCat.core/MyConnWriter.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o
-.PHONY : src/com.blackCat.core/MyConnWriter.cpp.o
+src/com.blackCat.core/ConnWriter.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o
+.PHONY : src/com.blackCat.core/ConnWriter.cpp.o
 
-src/com.blackCat.core/MyConnWriter.i: src/com.blackCat.core/MyConnWriter.cpp.i
+src/com.blackCat.core/ConnWriter.i: src/com.blackCat.core/ConnWriter.cpp.i
 
-.PHONY : src/com.blackCat.core/MyConnWriter.i
+.PHONY : src/com.blackCat.core/ConnWriter.i
 
 # target to preprocess a source file
-src/com.blackCat.core/MyConnWriter.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.i
-.PHONY : src/com.blackCat.core/MyConnWriter.cpp.i
+src/com.blackCat.core/ConnWriter.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.i
+.PHONY : src/com.blackCat.core/ConnWriter.cpp.i
 
-src/com.blackCat.core/MyConnWriter.s: src/com.blackCat.core/MyConnWriter.cpp.s
+src/com.blackCat.core/ConnWriter.s: src/com.blackCat.core/ConnWriter.cpp.s
 
-.PHONY : src/com.blackCat.core/MyConnWriter.s
+.PHONY : src/com.blackCat.core/ConnWriter.s
 
 # target to generate assembly for a file
-src/com.blackCat.core/MyConnWriter.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.s
-.PHONY : src/com.blackCat.core/MyConnWriter.cpp.s
+src/com.blackCat.core/ConnWriter.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.s
+.PHONY : src/com.blackCat.core/ConnWriter.cpp.s
 
-src/com.blackCat.core/MyMain.o: src/com.blackCat.core/MyMain.cpp.o
+src/com.blackCat.core/Main.o: src/com.blackCat.core/Main.cpp.o
 
-.PHONY : src/com.blackCat.core/MyMain.o
+.PHONY : src/com.blackCat.core/Main.o
 
 # target to build an object file
-src/com.blackCat.core/MyMain.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o
-.PHONY : src/com.blackCat.core/MyMain.cpp.o
+src/com.blackCat.core/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o
+.PHONY : src/com.blackCat.core/Main.cpp.o
 
-src/com.blackCat.core/MyMain.i: src/com.blackCat.core/MyMain.cpp.i
+src/com.blackCat.core/Main.i: src/com.blackCat.core/Main.cpp.i
 
-.PHONY : src/com.blackCat.core/MyMain.i
-
-# target to preprocess a source file
-src/com.blackCat.core/MyMain.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.i
-.PHONY : src/com.blackCat.core/MyMain.cpp.i
-
-src/com.blackCat.core/MyMain.s: src/com.blackCat.core/MyMain.cpp.s
-
-.PHONY : src/com.blackCat.core/MyMain.s
-
-# target to generate assembly for a file
-src/com.blackCat.core/MyMain.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.s
-.PHONY : src/com.blackCat.core/MyMain.cpp.s
-
-src/com.blackCat.core/MyService.o: src/com.blackCat.core/MyService.cpp.o
-
-.PHONY : src/com.blackCat.core/MyService.o
-
-# target to build an object file
-src/com.blackCat.core/MyService.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o
-.PHONY : src/com.blackCat.core/MyService.cpp.o
-
-src/com.blackCat.core/MyService.i: src/com.blackCat.core/MyService.cpp.i
-
-.PHONY : src/com.blackCat.core/MyService.i
+.PHONY : src/com.blackCat.core/Main.i
 
 # target to preprocess a source file
-src/com.blackCat.core/MyService.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.i
-.PHONY : src/com.blackCat.core/MyService.cpp.i
+src/com.blackCat.core/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.i
+.PHONY : src/com.blackCat.core/Main.cpp.i
 
-src/com.blackCat.core/MyService.s: src/com.blackCat.core/MyService.cpp.s
+src/com.blackCat.core/Main.s: src/com.blackCat.core/Main.cpp.s
 
-.PHONY : src/com.blackCat.core/MyService.s
-
-# target to generate assembly for a file
-src/com.blackCat.core/MyService.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.s
-.PHONY : src/com.blackCat.core/MyService.cpp.s
-
-src/com.blackCat.core/MySocketWorker.o: src/com.blackCat.core/MySocketWorker.cpp.o
-
-.PHONY : src/com.blackCat.core/MySocketWorker.o
-
-# target to build an object file
-src/com.blackCat.core/MySocketWorker.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o
-.PHONY : src/com.blackCat.core/MySocketWorker.cpp.o
-
-src/com.blackCat.core/MySocketWorker.i: src/com.blackCat.core/MySocketWorker.cpp.i
-
-.PHONY : src/com.blackCat.core/MySocketWorker.i
-
-# target to preprocess a source file
-src/com.blackCat.core/MySocketWorker.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.i
-.PHONY : src/com.blackCat.core/MySocketWorker.cpp.i
-
-src/com.blackCat.core/MySocketWorker.s: src/com.blackCat.core/MySocketWorker.cpp.s
-
-.PHONY : src/com.blackCat.core/MySocketWorker.s
+.PHONY : src/com.blackCat.core/Main.s
 
 # target to generate assembly for a file
-src/com.blackCat.core/MySocketWorker.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.s
-.PHONY : src/com.blackCat.core/MySocketWorker.cpp.s
+src/com.blackCat.core/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.s
+.PHONY : src/com.blackCat.core/Main.cpp.s
 
 src/com.blackCat.core/MySunnet.o: src/com.blackCat.core/MySunnet.cpp.o
 
@@ -285,32 +204,86 @@ src/com.blackCat.core/MySunnet.cpp.s:
 	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.s
 .PHONY : src/com.blackCat.core/MySunnet.cpp.s
 
-src/com.blackCat.core/MyWorker.o: src/com.blackCat.core/MyWorker.cpp.o
+src/com.blackCat.core/Service.o: src/com.blackCat.core/Service.cpp.o
 
-.PHONY : src/com.blackCat.core/MyWorker.o
+.PHONY : src/com.blackCat.core/Service.o
 
 # target to build an object file
-src/com.blackCat.core/MyWorker.cpp.o:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o
-.PHONY : src/com.blackCat.core/MyWorker.cpp.o
+src/com.blackCat.core/Service.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o
+.PHONY : src/com.blackCat.core/Service.cpp.o
 
-src/com.blackCat.core/MyWorker.i: src/com.blackCat.core/MyWorker.cpp.i
+src/com.blackCat.core/Service.i: src/com.blackCat.core/Service.cpp.i
 
-.PHONY : src/com.blackCat.core/MyWorker.i
+.PHONY : src/com.blackCat.core/Service.i
 
 # target to preprocess a source file
-src/com.blackCat.core/MyWorker.cpp.i:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.i
-.PHONY : src/com.blackCat.core/MyWorker.cpp.i
+src/com.blackCat.core/Service.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.i
+.PHONY : src/com.blackCat.core/Service.cpp.i
 
-src/com.blackCat.core/MyWorker.s: src/com.blackCat.core/MyWorker.cpp.s
+src/com.blackCat.core/Service.s: src/com.blackCat.core/Service.cpp.s
 
-.PHONY : src/com.blackCat.core/MyWorker.s
+.PHONY : src/com.blackCat.core/Service.s
 
 # target to generate assembly for a file
-src/com.blackCat.core/MyWorker.cpp.s:
-	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.s
-.PHONY : src/com.blackCat.core/MyWorker.cpp.s
+src/com.blackCat.core/Service.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.s
+.PHONY : src/com.blackCat.core/Service.cpp.s
+
+src/com.blackCat.core/SocketWorker.o: src/com.blackCat.core/SocketWorker.cpp.o
+
+.PHONY : src/com.blackCat.core/SocketWorker.o
+
+# target to build an object file
+src/com.blackCat.core/SocketWorker.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o
+.PHONY : src/com.blackCat.core/SocketWorker.cpp.o
+
+src/com.blackCat.core/SocketWorker.i: src/com.blackCat.core/SocketWorker.cpp.i
+
+.PHONY : src/com.blackCat.core/SocketWorker.i
+
+# target to preprocess a source file
+src/com.blackCat.core/SocketWorker.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.i
+.PHONY : src/com.blackCat.core/SocketWorker.cpp.i
+
+src/com.blackCat.core/SocketWorker.s: src/com.blackCat.core/SocketWorker.cpp.s
+
+.PHONY : src/com.blackCat.core/SocketWorker.s
+
+# target to generate assembly for a file
+src/com.blackCat.core/SocketWorker.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.s
+.PHONY : src/com.blackCat.core/SocketWorker.cpp.s
+
+src/com.blackCat.core/Worker.o: src/com.blackCat.core/Worker.cpp.o
+
+.PHONY : src/com.blackCat.core/Worker.o
+
+# target to build an object file
+src/com.blackCat.core/Worker.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o
+.PHONY : src/com.blackCat.core/Worker.cpp.o
+
+src/com.blackCat.core/Worker.i: src/com.blackCat.core/Worker.cpp.i
+
+.PHONY : src/com.blackCat.core/Worker.i
+
+# target to preprocess a source file
+src/com.blackCat.core/Worker.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.i
+.PHONY : src/com.blackCat.core/Worker.cpp.i
+
+src/com.blackCat.core/Worker.s: src/com.blackCat.core/Worker.cpp.s
+
+.PHONY : src/com.blackCat.core/Worker.s
+
+# target to generate assembly for a file
+src/com.blackCat.core/Worker.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.s
+.PHONY : src/com.blackCat.core/Worker.cpp.s
 
 # Help Target
 help:
@@ -321,27 +294,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_sunnet"
-	@echo "... src/com.blackCat.core/MyConn.o"
-	@echo "... src/com.blackCat.core/MyConn.i"
-	@echo "... src/com.blackCat.core/MyConn.s"
-	@echo "... src/com.blackCat.core/MyConnWriter.o"
-	@echo "... src/com.blackCat.core/MyConnWriter.i"
-	@echo "... src/com.blackCat.core/MyConnWriter.s"
-	@echo "... src/com.blackCat.core/MyMain.o"
-	@echo "... src/com.blackCat.core/MyMain.i"
-	@echo "... src/com.blackCat.core/MyMain.s"
-	@echo "... src/com.blackCat.core/MyService.o"
-	@echo "... src/com.blackCat.core/MyService.i"
-	@echo "... src/com.blackCat.core/MyService.s"
-	@echo "... src/com.blackCat.core/MySocketWorker.o"
-	@echo "... src/com.blackCat.core/MySocketWorker.i"
-	@echo "... src/com.blackCat.core/MySocketWorker.s"
+	@echo "... src/com.blackCat.core/ConnWriter.o"
+	@echo "... src/com.blackCat.core/ConnWriter.i"
+	@echo "... src/com.blackCat.core/ConnWriter.s"
+	@echo "... src/com.blackCat.core/Main.o"
+	@echo "... src/com.blackCat.core/Main.i"
+	@echo "... src/com.blackCat.core/Main.s"
 	@echo "... src/com.blackCat.core/MySunnet.o"
 	@echo "... src/com.blackCat.core/MySunnet.i"
 	@echo "... src/com.blackCat.core/MySunnet.s"
-	@echo "... src/com.blackCat.core/MyWorker.o"
-	@echo "... src/com.blackCat.core/MyWorker.i"
-	@echo "... src/com.blackCat.core/MyWorker.s"
+	@echo "... src/com.blackCat.core/Service.o"
+	@echo "... src/com.blackCat.core/Service.i"
+	@echo "... src/com.blackCat.core/Service.s"
+	@echo "... src/com.blackCat.core/SocketWorker.o"
+	@echo "... src/com.blackCat.core/SocketWorker.i"
+	@echo "... src/com.blackCat.core/SocketWorker.s"
+	@echo "... src/com.blackCat.core/Worker.o"
+	@echo "... src/com.blackCat.core/Worker.i"
+	@echo "... src/com.blackCat.core/Worker.s"
 .PHONY : help
 
 

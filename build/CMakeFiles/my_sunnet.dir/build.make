@@ -57,74 +57,35 @@ include CMakeFiles/my_sunnet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_sunnet.dir/flags.make
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o: ../src/com.blackCat.core/MyConn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MyConn.cpp
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o: ../src/com.blackCat.core/ConnWriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MyConn.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.i
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.i
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MyConn.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.s
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.s
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o: ../src/com.blackCat.core/MyConnWriter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MyConnWriter.cpp
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o: ../src/com.blackCat.core/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MyConnWriter.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.i
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.i
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MyConnWriter.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.s
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o: ../src/com.blackCat.core/MyMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MyMain.cpp
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MyMain.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.i
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MyMain.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.s
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o: ../src/com.blackCat.core/MyService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MyService.cpp
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MyService.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.i
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MyService.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.s
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o: ../src/com.blackCat.core/MySocketWorker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MySocketWorker.cpp
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MySocketWorker.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.i
-
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MySocketWorker.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.s
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.s
 
 CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
 CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o: ../src/com.blackCat.core/MySunnet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp
 
 CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.i: cmake_force
@@ -135,42 +96,66 @@ CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.s
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o: ../src/com.blackCat.core/MyWorker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MyWorker.cpp
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o: ../src/com.blackCat.core/Service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/MyWorker.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.i
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.i
 
-CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/MyWorker.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.s
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.s
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o: ../src/com.blackCat.core/SocketWorker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.i
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.s
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o: CMakeFiles/my_sunnet.dir/flags.make
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o: ../src/com.blackCat.core/Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp > CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.i
+
+CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.s
 
 # Object files for target my_sunnet
 my_sunnet_OBJECTS = \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o" \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o" \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o" \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o" \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o" \
+"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o" \
+"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o" \
 "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o" \
-"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o"
+"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o" \
+"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o" \
+"CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o"
 
 # External object files for target my_sunnet
 my_sunnet_EXTERNAL_OBJECTS =
 
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o
+my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o
+my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o
 my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o
-my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o
+my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o
+my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o
+my_sunnet: CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o
 my_sunnet: CMakeFiles/my_sunnet.dir/build.make
 my_sunnet: CMakeFiles/my_sunnet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable my_sunnet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/usr/local/c_lua_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable my_sunnet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_sunnet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

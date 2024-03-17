@@ -38,7 +38,7 @@ void MySunnet::startWroker(){
     for (int i = 0; i < WORKER_NUM; i++)
     {
         cout << "start worker thread："<<i<<endl;
-        MyWorker* worker = new MyWorker();
+        Worker* worker = new Worker();
         worker->worker_id = i;
         worker->each_num = 2 << i;
         my_workers.push_back(worker);
@@ -50,7 +50,7 @@ void MySunnet::startWroker(){
 
 
 uint32_t MySunnet::NewService(shared_ptr<string> type){
-    auto service = make_shared<MyService>();
+    auto service = make_shared<Service>();
     service->type = type;
     pthread_rwlock_wrlock(&serviceMapLock);
     {
@@ -63,12 +63,12 @@ uint32_t MySunnet::NewService(shared_ptr<string> type){
     return service->id;
 }
 
-shared_ptr<MyService> MySunnet::GetService(uint32_t id){
-    shared_ptr<MyService> service = NULL;
+shared_ptr<Service> MySunnet::GetService(uint32_t id){
+    shared_ptr<Service> service = NULL;
     pthread_rwlock_wrlock(&serviceMapLock); 
     {
         if(!serviceMap.empty()){
-            unordered_map<uint32_t,shared_ptr<MyService>>::iterator iter = serviceMap.find(id);
+            unordered_map<uint32_t,shared_ptr<Service>>::iterator iter = serviceMap.find(id);
             if(iter != serviceMap.end()){
                 service = iter->second;
             }
@@ -79,7 +79,7 @@ shared_ptr<MyService> MySunnet::GetService(uint32_t id){
 }
 
 void MySunnet::KillService(uint32_t id){
-    shared_ptr<MyService> service = GetService(id);
+    shared_ptr<Service> service = GetService(id);
     if(!service){
         return;
     }
@@ -97,7 +97,7 @@ void MySunnet::KillService(uint32_t id){
 }
 
 
-void MySunnet::PushGlobalService(shared_ptr<MyService> service){
+void MySunnet::PushGlobalService(shared_ptr<Service> service){
     pthread_spin_lock(&globalQLock);
     {
         globalQueue.push(service);
@@ -106,8 +106,8 @@ void MySunnet::PushGlobalService(shared_ptr<MyService> service){
     pthread_spin_unlock(&globalQLock);
 }
 
-shared_ptr<MyService> MySunnet::PopGlobalService(){
-    shared_ptr<MyService> ret = NULL;
+shared_ptr<Service> MySunnet::PopGlobalService(){
+    shared_ptr<Service> ret = NULL;
     pthread_spin_lock(&globalQLock);
     {
         if(!globalQueue.empty()){
@@ -121,9 +121,9 @@ shared_ptr<MyService> MySunnet::PopGlobalService(){
 }
 
 
-shared_ptr<MyBaseMsg> MySunnet::MakeMsg(uint32_t source,char* buff,int len){
-    auto msg = make_shared<MyServiceMsg>();
-    msg->type = MyBaseMsg::TYPE::SERVICE_MSG;
+shared_ptr<BaseMsg> MySunnet::MakeMsg(uint32_t source,char* buff,int len){
+    auto msg = make_shared<ServiceMsg>();
+    msg->type = BaseMsg::TYPE::SERVICE_MSG;
     msg->source = source;
     msg->buff = shared_ptr<char>(buff);
     msg->size = len;
@@ -132,8 +132,8 @@ shared_ptr<MyBaseMsg> MySunnet::MakeMsg(uint32_t source,char* buff,int len){
 }
 
 
-void MySunnet::send(uint32_t toSid,shared_ptr<MyBaseMsg> msg){
-    shared_ptr<MyService> toService = MySunnet::inst->GetService(toSid);
+void MySunnet::send(uint32_t toSid,shared_ptr<BaseMsg> msg){
+    shared_ptr<Service> toService = MySunnet::inst->GetService(toSid);
     if(!toService){
         cout << "send fail,toSrv not exist toId:"<<toSid<<endl;
         return;
@@ -179,7 +179,7 @@ void MySunnet::CheckAndWake(){
 
 
 void MySunnet::startSocketWorker(){
-    my_socket_worker = new MySocketWorker();
+    my_socket_worker = new SocketWorker();
     my_socket_worker->onInit();
 
     my_socket_worker_thread = new thread(*my_socket_worker);
@@ -189,7 +189,7 @@ void MySunnet::startSocketWorker(){
 void MySunnet::AddConn(int fd,uint32_t service_id,uint8_t type){
     pthread_rwlock_wrlock(&connLock);
     {
-        auto conn = make_shared<MyConn>();
+        auto conn = make_shared<Conn>();
         conn->type = type;
         conn->fd = fd;
         conn->service_id = service_id;
@@ -211,12 +211,12 @@ void MySunnet::RemoveConn(int fd){
 }
 
 
-shared_ptr<MyConn> MySunnet::getConn(int fd){
-    shared_ptr<MyConn> ret = NULL;
+shared_ptr<Conn> MySunnet::getConn(int fd){
+    shared_ptr<Conn> ret = NULL;
     pthread_rwlock_rdlock(&connLock);
     {
         if(!conns.empty()){
-            unordered_map<int,shared_ptr<MyConn>>::iterator iter = conns.find(fd);
+            unordered_map<int,shared_ptr<Conn>>::iterator iter = conns.find(fd);
             if(iter != conns.end()){
                 ret = iter->second;
             }
@@ -256,7 +256,7 @@ int MySunnet::Listen(int port,uint32_t service_id){
     }
 
     //  添加自定义Socket
-    AddConn(listen_fd,service_id,MyConn::MY_CONN_TYPE::listen);
+    AddConn(listen_fd,service_id,Conn::MY_CONN_TYPE::listen);
 
     //  添加事件到epoll
     my_socket_worker->addEvent(listen_fd);
@@ -281,7 +281,7 @@ void MySunnet::CloseConn(int fd){
 
 
 void MySunnet::AddConnWriteObj(int fd){
-    auto m = make_shared<MyConnWriter>();
+    auto m = make_shared<ConnWriter>();
     m->fd = fd;
     pthread_rwlock_wrlock(&connWriterLock);
     {
@@ -299,7 +299,7 @@ void MySunnet::RemoveConnWriteObj(int fd){
     pthread_rwlock_unlock(&connWriterLock);
 }
         
-shared_ptr<MyConnWriter> MySunnet::GetConnWriteObj(int fd){ 
+shared_ptr<ConnWriter> MySunnet::GetConnWriteObj(int fd){ 
     return connWriterMap[fd];
 }
 

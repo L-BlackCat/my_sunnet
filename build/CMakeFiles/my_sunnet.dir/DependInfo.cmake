@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MyConn.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o"
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MyConnWriter.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o"
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MyMain.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o"
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MyService.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o"
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MySocketWorker.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o"
+  "/usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o"
+  "/usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o"
   "/usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o"
-  "/usr/local/c_lua_demo/src/com.blackCat.core/MyWorker.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o"
+  "/usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o"
+  "/usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o"
+  "/usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp" "/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

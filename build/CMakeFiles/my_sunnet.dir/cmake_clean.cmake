@@ -1,11 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConn.cpp.o"
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyConnWriter.cpp.o"
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyMain.cpp.o"
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyService.cpp.o"
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySocketWorker.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o"
   "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o"
-  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MyWorker.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o"
   "my_sunnet.pdb"
   "my_sunnet"
 )
