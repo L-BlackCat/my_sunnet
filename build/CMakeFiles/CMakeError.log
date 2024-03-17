@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_40841/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_40841.dir/build.make CMakeFiles/cmTC_40841.dir/build
+gmake[1]: Entering directory `/usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40841.dir/CheckSymbolExists.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_40841.dir/CheckSymbolExists.c.o   -c /usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_40841
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40841.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_40841.dir/CheckSymbolExists.c.o  -o cmTC_40841 -rdynamic 
+CMakeFiles/cmTC_40841.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_40841] Error 1
+gmake[1]: Leaving directory `/usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_40841/fast] Error 2
+
+File /usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9024d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9024d.dir/build.make CMakeFiles/cmTC_9024d.dir/build
+gmake[1]: Entering directory `/usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9024d.dir/CheckFunctionExists.c.o
+/usr/bin/gcc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9024d.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9024d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9024d.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9024d.dir/CheckFunctionExists.c.o  -o cmTC_9024d -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_9024d] Error 1
+gmake[1]: Leaving directory `/usr/local/c_lua_demo/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_9024d/fast] Error 2
+
+

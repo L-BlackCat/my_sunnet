@@ -1,0 +1,3 @@
+/usr/local/c_lua_demo/build/CMakeFiles/edit_cache.dir
+/usr/local/c_lua_demo/build/CMakeFiles/rebuild_cache.dir
+/usr/local/c_lua_demo/build/CMakeFiles/my_sunnet.dir
