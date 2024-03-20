@@ -150,6 +150,33 @@ src/com.blackCat.core/ConnWriter.cpp.s:
 	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.s
 .PHONY : src/com.blackCat.core/ConnWriter.cpp.s
 
+src/com.blackCat.core/LuaApi.o: src/com.blackCat.core/LuaApi.cpp.o
+
+.PHONY : src/com.blackCat.core/LuaApi.o
+
+# target to build an object file
+src/com.blackCat.core/LuaApi.cpp.o:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/LuaApi.cpp.o
+.PHONY : src/com.blackCat.core/LuaApi.cpp.o
+
+src/com.blackCat.core/LuaApi.i: src/com.blackCat.core/LuaApi.cpp.i
+
+.PHONY : src/com.blackCat.core/LuaApi.i
+
+# target to preprocess a source file
+src/com.blackCat.core/LuaApi.cpp.i:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/LuaApi.cpp.i
+.PHONY : src/com.blackCat.core/LuaApi.cpp.i
+
+src/com.blackCat.core/LuaApi.s: src/com.blackCat.core/LuaApi.cpp.s
+
+.PHONY : src/com.blackCat.core/LuaApi.s
+
+# target to generate assembly for a file
+src/com.blackCat.core/LuaApi.cpp.s:
+	$(MAKE) -f CMakeFiles/my_sunnet.dir/build.make CMakeFiles/my_sunnet.dir/src/com.blackCat.core/LuaApi.cpp.s
+.PHONY : src/com.blackCat.core/LuaApi.cpp.s
+
 src/com.blackCat.core/Main.o: src/com.blackCat.core/Main.cpp.o
 
 .PHONY : src/com.blackCat.core/Main.o
@@ -297,6 +324,9 @@ help:
 	@echo "... src/com.blackCat.core/ConnWriter.o"
 	@echo "... src/com.blackCat.core/ConnWriter.i"
 	@echo "... src/com.blackCat.core/ConnWriter.s"
+	@echo "... src/com.blackCat.core/LuaApi.o"
+	@echo "... src/com.blackCat.core/LuaApi.i"
+	@echo "... src/com.blackCat.core/LuaApi.s"
 	@echo "... src/com.blackCat.core/Main.o"
 	@echo "... src/com.blackCat.core/Main.i"
 	@echo "... src/com.blackCat.core/Main.s"

@@ -6,5 +6,5 @@ CXX_FLAGS =  -O0 -Wall -g -ggdb   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/c_lua_demo/include 
+CXX_INCLUDES = -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src 
 

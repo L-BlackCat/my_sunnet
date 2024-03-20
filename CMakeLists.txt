@@ -35,3 +35,8 @@ SET(CMAKE_BUILD_TYPE "Debug")
 SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
+
+#   Lua头文件、库
+include_directories(./3rd/lua-5.4.6/src)
+target_link_libraries(my_sunnet liblua.a)
+target_link_libraries(my_sunnet dl)

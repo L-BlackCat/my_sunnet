@@ -20,6 +20,8 @@ void MySunnet::Start(){
     pthread_rwlock_init(&serviceMapLock,NULL);
     pthread_spin_init(&globalQLock,PTHREAD_PROCESS_PRIVATE);
     pthread_rwlock_init(&connLock,NULL);
+    pthread_cond_init(&sleepCond, NULL);
+    pthread_mutex_init(&sleepMutex, NULL);    
 
     startSocketWorker();
     startWroker();
@@ -65,7 +67,7 @@ uint32_t MySunnet::NewService(shared_ptr<string> type){
 
 shared_ptr<Service> MySunnet::GetService(uint32_t id){
     shared_ptr<Service> service = NULL;
-    pthread_rwlock_wrlock(&serviceMapLock); 
+    pthread_rwlock_rdlock(&serviceMapLock); 
     {
         if(!serviceMap.empty()){
             unordered_map<uint32_t,shared_ptr<Service>>::iterator iter = serviceMap.find(id);
@@ -88,9 +90,7 @@ void MySunnet::KillService(uint32_t id){
     service->isExiting = true;
     pthread_rwlock_wrlock(&serviceMapLock); 
     {
-        if(!serviceMap.empty()){
-            serviceMap.erase(id);
-        }
+        serviceMap.erase(id);
     }
     pthread_rwlock_unlock(&serviceMapLock);
 
@@ -133,7 +133,7 @@ shared_ptr<BaseMsg> MySunnet::MakeMsg(uint32_t source,char* buff,int len){
 
 
 void MySunnet::send(uint32_t toSid,shared_ptr<BaseMsg> msg){
-    shared_ptr<Service> toService = MySunnet::inst->GetService(toSid);
+    shared_ptr<Service> toService = GetService(toSid);
     if(!toService){
         cout << "send fail,toSrv not exist toId:"<<toSid<<endl;
         return;
@@ -145,7 +145,7 @@ void MySunnet::send(uint32_t toSid,shared_ptr<BaseMsg> msg){
     pthread_spin_lock(&toService->inGlobalLock);
     {
         if(!toService->inGlobal){
-            MySunnet::inst->PushGlobalService(toService);
+            PushGlobalService(toService);
             toService->inGlobal = true;
             hasPush = true;
         }
@@ -178,7 +178,7 @@ void MySunnet::CheckAndWake(){
 }
 
 
-void MySunnet::startSocketWorker(){
+void MySunnet::startSocketWorker(){ 
     my_socket_worker = new SocketWorker();
     my_socket_worker->onInit();
 
@@ -305,4 +305,14 @@ shared_ptr<ConnWriter> MySunnet::GetConnWriteObj(int fd){
 
 void MySunnet::ModifyEvent(int fd,bool out){
     my_socket_worker->modifyEvent(fd,out);
+}
+
+void  MySunnet::waitWorker(){
+    pthread_mutex_lock(&sleepMutex);
+    {
+        sleepCount++;
+        pthread_cond_wait(&sleepCond,&sleepMutex);
+        sleepCount--;
+    }
+    pthread_mutex_unlock(&sleepMutex);
 }

@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
+#include "LuaApi.h"
+
 
 // class MySunnet;
 
@@ -25,7 +27,38 @@ Service::~Service(){
 void Service::OnInit(){
     cout << '[' << *type << "-" << id << "] OnInit()" << endl;
     
-    MySunnet::inst->Listen(8888,id);
+    // MySunnet::inst->Listen(8888,id);         //  测试用
+
+    //  增加lua_state指针，用于创建管理虚拟机
+
+    lua_state = luaL_newstate();
+
+    luaL_openlibs(lua_state);
+    string path = get_current_dir_name();
+    string filename = "../service/" + *type + "/init.lua";
+
+    //  lua_state编译并执行lua文件
+    int isok = luaL_dofile(lua_state,filename.data());
+    if(isok == 1){ //成功返回值为0，失败则为1.
+         cout << "run lua fail:" << lua_tostring(lua_state, -1) << endl;
+    }else{
+        cout << "success lua file "<< *type << id << endl;
+    }
+
+    //  注册MySunnet系统API
+    LuaApi::OnRegister(lua_state);
+
+    //  把全局变量 name 里的值压栈，返回该值的类型。
+    lua_getglobal(lua_state,"OnInit");
+
+    lua_pushinteger(lua_state,id);
+
+    isok = lua_pcall(lua_state,1,0,0);
+
+    if(isok != 0){
+        cout << "service call lua is fail,err:" << lua_tostring(lua_state,-1) << endl;
+    }
+
 }
 
 
@@ -85,6 +118,14 @@ void Service::OnMsg(shared_ptr<BaseMsg> msg){
 
 void Service::OnExit(){
     cout << '[' << *type << "-" << id << "] OnExit()" << endl; 
+
+    lua_getglobal(lua_state,"OnExit");
+    int ret = lua_pcall(lua_state,0,0,0); 
+    if(ret != 0){
+        cout << "service call lua is fail,err:" << lua_tostring(lua_state,-1) << endl;
+    }
+    lua_close(lua_state);
+
 }
 
 void Service::pushMsg(shared_ptr<BaseMsg> msg){
@@ -131,28 +172,6 @@ shared_ptr<BaseMsg> Service::popMsg(){
 }
 
 
-
-// void Service::send(uint32_t toSid,shared_ptr<BaseMsg> msg){
-//     shared_ptr<Service> toService = MySunnet::inst->getService(toSid);
-//     if(!toService){
-//         cout << "send fail,toSrv not exist toId:"<<toSid<<endl;
-//         return;
-//     }
-//     toService->pushMsg(msg);
-//     bool hasPush = false;
-
-//     //  检查并放入全局队列
-//     pthread_spin_lock(&inGlobalLock);
-//     {
-//         if(!toService->inGlobal){
-//             MySunnet::inst->PushGlobalService(toService);
-//             toService->inGlobal = true;
-//             hasPush = true;
-//         }
-//     }
-//     pthread_spin_unlock(&inGlobalLock);
-// }
-
 void Service::setInGlobal(bool inGlobal){
     pthread_spin_lock(&inGlobalLock);
     {
@@ -163,12 +182,25 @@ void Service::setInGlobal(bool inGlobal){
 
 
 void Service::OnServiceMsg(shared_ptr<ServiceMsg> m){
-        cout << '[' << *type << "-" << id << "] OnMsg: "<< m->buff << endl; 
+        // cout << '[' << *type << "-" << id << "] OnMsg: "<< m->buff << endl; 
 
-        auto msgRet = MySunnet::inst->MakeMsg(id,new char[9999999]{'p','i','n','g','\0'},9999999);
+        // auto msgRet = MySunnet::inst->MakeMsg(id,new char[9999999]{'p','i','n','g','\0'},9999999);
         
 
-        MySunnet::inst->send(m->source,msgRet);
+        // MySunnet::inst->send(m->source,msgRet);
+
+        lua_getglobal(lua_state,"OnServiceMsg");
+        lua_pushinteger(lua_state,m->source);
+        lua_pushlstring(lua_state,m->buff.get(),m->size);
+
+        int ret = lua_pcall(lua_state,2,0,0);
+        if(ret != 0){
+            cout <<"call lua OnServiceMsg fail id:" << id << " to:"<< m->source << " "<< lua_tostring(lua_state,-1)<<endl; 
+        }
+
+        if(isExiting){
+            lua_close(lua_state);
+        }
 }
 
 

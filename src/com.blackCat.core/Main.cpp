@@ -42,7 +42,9 @@ int main(){
     //  开启一些系统逻辑
     // test();
     // testEpoll();
-    tesetEcho();
+    // tesetEcho();
+
+    MySunnet::inst->NewService(make_shared<string>("main"));
     MySunnet::inst->Wait();
     return 0;
 }

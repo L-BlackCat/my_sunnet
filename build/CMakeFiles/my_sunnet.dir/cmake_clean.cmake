@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o"
+  "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/LuaApi.cpp.o"
   "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o"
   "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o"
   "CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o"

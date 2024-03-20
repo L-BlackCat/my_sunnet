@@ -2,6 +2,11 @@
 #include "Msg.h"
 #include <queue>
 #include <memory>
+extern "C"{
+    #include <lua.h>
+    #include <lualib.h>
+    #include <lauxlib.h>
+}
 
 using namespace std;
 
@@ -23,6 +28,8 @@ class Service{
 
         bool inGlobal;
         pthread_spinlock_t inGlobalLock;
+    private:
+        lua_State* lua_state;
 
     public:
         Service();

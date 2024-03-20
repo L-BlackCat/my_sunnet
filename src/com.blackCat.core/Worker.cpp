@@ -32,7 +32,7 @@ void Worker::operator()(){
              *  2.当向全局队列中插入服务后，唤醒正在休眠的工作线程
             */
             // usleep(100);
-            waitWorker();
+            MySunnet::inst->waitWorker();
         }
     }
 }
@@ -54,15 +54,4 @@ void Worker::checkAndPopGlobal(shared_ptr<Service> service){
         service->setInGlobal(false);
     }
     pthread_spin_unlock(&service->queueLock);
-}
-
-
-void Worker::waitWorker(){
-    pthread_mutex_lock(&MySunnet::inst->sleepMutex);
-    {
-        MySunnet::inst->sleepCount++;
-        pthread_cond_wait(&MySunnet::inst->sleepCond,&MySunnet::inst->sleepMutex);
-        MySunnet::inst->sleepCount--;
-    }
-    pthread_mutex_unlock(&MySunnet::inst->sleepMutex);
 }

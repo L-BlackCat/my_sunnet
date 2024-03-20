@@ -6,6 +6,40 @@
 
 #IncludeRegexTransform: 
 
+.././3rd/lua-5.4.6/src/lauxlib.h
+stddef.h
+-
+stdio.h
+-
+luaconf.h
+.././3rd/lua-5.4.6/src/luaconf.h
+lua.h
+.././3rd/lua-5.4.6/src/lua.h
+assert.h
+-
+
+.././3rd/lua-5.4.6/src/lua.h
+stdarg.h
+-
+stddef.h
+-
+luaconf.h
+.././3rd/lua-5.4.6/src/luaconf.h
+
+.././3rd/lua-5.4.6/src/luaconf.h
+limits.h
+-
+stddef.h
+-
+stdint.h
+-
+assert.h
+-
+
+.././3rd/lua-5.4.6/src/lualib.h
+lua.h
+.././3rd/lua-5.4.6/src/lua.h
+
 ../include/Conn.h
 cstdint
 -
@@ -14,6 +48,16 @@ cstdint
 memory
 -
 list
+-
+
+../include/LuaApi.h
+iostream
+-
+lua.h
+-
+lualib.h
+-
+lauxlib.h
 -
 
 ../include/Msg.h
@@ -43,6 +87,12 @@ queue
 -
 memory
 -
+lua.h
+-
+lualib.h
+-
+lauxlib.h
+-
 
 ../include/SocketWorker.h
 Conn.h
@@ -58,15 +108,19 @@ thread
 Service.h
 ../include/Service.h
 
-/usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp
+/usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp
+Service.h
+/usr/local/c_lua_demo/src/com.blackCat.core/Service.h
 iostream
 -
-ConnWriter.h
-/usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.h
 MySunnet.h
 /usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.h
-sys/socket.h
--
 unistd.h
 -
+errno.h
+-
+string.h
+-
+LuaApi.h
+/usr/local/c_lua_demo/src/com.blackCat.core/LuaApi.h
 

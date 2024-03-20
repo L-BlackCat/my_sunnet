@@ -1,32 +1,37 @@
 [
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/ConnWriter.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/ConnWriter.cpp"
 },
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/LuaApi.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/LuaApi.cpp",
+  "file": "/usr/local/c_lua_demo/src/com.blackCat.core/LuaApi.cpp"
+},
+{
+  "directory": "/usr/local/c_lua_demo/build",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Main.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/Main.cpp"
 },
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/MySunnet.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/MySunnet.cpp"
 },
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Service.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/Service.cpp"
 },
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/SocketWorker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/SocketWorker.cpp"
 },
 {
   "directory": "/usr/local/c_lua_demo/build",
-  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp",
+  "command": "/usr/bin/g++   -I/usr/local/c_lua_demo/include -I/usr/local/c_lua_demo/./3rd/lua-5.4.6/src   -O0 -Wall -g -ggdb   -std=c++11 -o CMakeFiles/my_sunnet.dir/src/com.blackCat.core/Worker.cpp.o -c /usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp",
   "file": "/usr/local/c_lua_demo/src/com.blackCat.core/Worker.cpp"
 }
 ]

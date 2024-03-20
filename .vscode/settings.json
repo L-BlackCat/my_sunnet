@@ -38,6 +38,7 @@
         "typeinfo": "cpp",
         "memory": "cpp",
         "string": "cpp",
-        "cerrno": "cpp"
+        "cerrno": "cpp",
+        "lua": "cpp"
     }
 }

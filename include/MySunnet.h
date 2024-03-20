@@ -47,6 +47,7 @@ class MySunnet{
         shared_ptr<ConnWriter> GetConnWriteObj(int fd);
 
         void ModifyEvent(int fd,bool out);
+        void waitWorker();
     private:
         int WORKER_NUM = 3;
         int max_service_id = 0;

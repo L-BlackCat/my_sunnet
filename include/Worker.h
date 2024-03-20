@@ -14,5 +14,4 @@ class Worker{
         void operator()();
     private:
         void checkAndPopGlobal(shared_ptr<Service> service);
-        void waitWorker();
 };
